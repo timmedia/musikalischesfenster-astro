@@ -1,0 +1,8 @@
+---
+import Gallery from "../components/Gallery.svelte";
+import Layout from "../layouts/StandardPage.astro";
+---
+
+<Layout title="Bilder" description="Aufnahmen vom Musikalischen Fenster.">
+  <Gallery client:only="svelte" />
+</Layout>

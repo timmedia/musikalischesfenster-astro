@@ -1,0 +1,49 @@
+---
+import Music from "../components/Music.svelte";
+import Layout from "../layouts/StandardPage.astro";
+---
+
+<Layout title="Musik" description="Aufnahmen vom Musikalischen Fenster.">
+  <p>
+    Falls die Wiedergabe nicht funktioniert, bitte den Chrome Browser verwenden
+    oder <a
+      href="https://drive.google.com/file/d/1via-XtC54bLdMt3xjsuIRlpoCCKDh-Yj/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer">den Film hier herunterladen</a
+    >.
+  </p>
+  <div class="max-w-full pt-3 m-0">
+    <iframe
+      class="w-full h-auto aspect-video rounded-md shadow-lg"
+      allowfullscreen="allowfullscreen"
+      src="https://drive.google.com/file/d/1nsgYlMI_1MMLhhzmuXJaEWfHMiR1p245/preview"
+      width="1280"
+      height="720"></iframe>
+  </div>
+  <p class="mt-3">
+    Texte: Karin Klemm<br />
+    Bach-ganze leise:<br />
+    Martin Pirktl (Gitarren) und Stefan Müller (Cembalo und Orgel)<br />
+    J. S. Bach: Praeludium für Orgel C-Dur BWV 547<br />
+    J. S. Bach: Praeludium für Orgel G-Dur BWV 541<br />
+    J. H. Kapsberger: Toccata J. S. Bach: Orgelfuge in G-Dur BWV 541<br />
+    J. S. Bach: "Nun komm der Heiden Heiland" aus den Leipziger Chorälen
+  </p>
+  <p>Aufgenommen am 9. Januar 2021</p>
+  <p class="pt-2">
+    Cembalo: nach Pertici: <a
+      href="https://vogel-scheer.de"
+      target="_blank"
+      rel="noopener noreferrer">vogel-scheer.de</a
+    ><br />
+    Orgel: Mitteltönige Orgel mit fünf umschaltbaren Subsemitonien (2020): <a
+      href="https://orgelbau-hauser.ch"
+      target="_blank"
+      rel="noopener noreferrer">orgelbau-hauser.ch</a
+    >
+  </p>
+  <h1 class="mt-10 mb-5 text-3xl font-semibold text-stone-800">
+    Musikaufnahmen
+  </h1>
+  <Music />
+</Layout>

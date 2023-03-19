@@ -1,25 +1,143 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header class="shadow-lg">
+  <svg class="hidden md:block" viewBox="0 0 92 12">
+    <defs>
+      <mask id="sample" maskUnits="userSpaceOnUse">
+        <rect width="400px" height="100px" fill="white"></rect>
+        <text
+          x="46"
+          y="10"
+          font-size="8.4"
+          font-family="Times New Roman"
+          text-anchor="middle">{SITE_TITLE}</text
+        >
+      </mask>
+    </defs>
+    <rect
+      id="title-mask"
+      fill="#eee"
+      width="100%"
+      height="100%"
+      mask="url(#sample)"></rect>
+  </svg>
+  <nav class="bg-primary-gray min-h-[50px]">
+    <div
+      class="container flex flex-wrap items-center justify-between md:justify-center mx-auto"
+    >
+      <h1
+        style="font-family: 'Times New Roman'"
+        class="md:hidden text-3xl font-medium ml-5 text-stone-600"
+      >
+        {SITE_TITLE}
+      </h1>
+      <button
+        id="menu-button"
+        type="button"
+        class="mt-[4px] inline-flex items-center p-2 ml-3 text-sm focus:bg-transparent text-gray-500 md:hidden focus:outline-none focus:ring-2"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu öffnen</span>
+        <svg
+          class="w-10 h-10"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path></svg
+        >
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="flex flex-col uppercase p-4 mt-4 md:flex-row mb-0 pb-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
+        >
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/"
+            >
+              Über uns
+            </HeaderLink>
+          </li>
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/bilder"
+            >
+              Bilder
+            </HeaderLink>
+          </li>
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/musik"
+            >
+              Musik
+            </HeaderLink>
+          </li>
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/artikel"
+            >
+              Artikel
+            </HeaderLink>
+          </li>
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/termine"
+            >
+              Termine
+            </HeaderLink>
+          </li>
+          <li class="mb-2 md:mb-0">
+            <HeaderLink
+              class="text-stone-500 text-base font-medium min-w-[100px] md:mb-0 md:pb-4"
+              href="/kontakt"
+            >
+              Kontakt
+            </HeaderLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <style>
-	header {
-		margin: 0em 0 2em;
+  svg {
+    min-width: 50%;
+    height: 100% !important;
+    max-width: 100%;
+    width: 100%;
+    margin: -2px -2px 0px -2px;
+  }
+
+  rect#title-mask {
+    fill: "red";
+  }
+  /* 
+	.showSVG, .hideSVG {
+		transition: transform 0.5s ease;
 	}
-	h2 {
-		margin: 0.5em 0;
-	}
+
+	.hideSVG {
+		transform: translateY(calc(55px - 100%));
+	} */
 </style>
+
+<script>
+  const button = document.querySelector("#menu-button");
+  const menu = document.querySelector("#navbar-default");
+  button!.addEventListener("click", () => {
+    menu!.classList.toggle("hidden");
+  });
+</script>
