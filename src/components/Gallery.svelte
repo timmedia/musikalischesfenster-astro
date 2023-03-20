@@ -50,7 +50,7 @@
     {/each}
   </Carousel>
 </div>
-<div class="grid grid-cols-5 gap-5 mt-5">
+<div class="grid grid-cols-5 gap-2 mt-2 md:gap-5 md:mt-5">
   {#each images as image, index}
     <img
       class={`select-none hover:scale-105 rounded-sm shadow-lg transition-all object-cover h-full w-full cursor-pointer ${
