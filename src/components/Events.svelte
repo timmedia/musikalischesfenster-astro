@@ -85,7 +85,7 @@
     {
       date: new Date(2020, 2, 21),
       title:
-        "(<strong>Verschoben, Infos folgen...</strong>) 14:30 Uhr, Palliativstation Zofingen",
+        "(Verschoben, Infos folgen...) 14:30 Uhr, Palliativstation Zofingen",
       content: "Gesang und Cembalo, Susannah Haberfeld, Stefan Müller",
       cancelled: true,
     },
@@ -230,7 +230,9 @@
         : 'text-stone-500'}"
     >
       <h1
-        class="text-xl text-inherit {termin?.cancelled ? 'line-through' : ''}"
+        class="md:text-xl text-inherit {termin?.cancelled
+          ? 'line-through'
+          : ''}"
       >
         <strong class="font-semibold text-inherit">
           {[
@@ -259,7 +261,7 @@
           ][termin.date.getMonth()]}
           {termin.date.getUTCFullYear()},
         </strong>
-        {termin.title}:
+        {@html termin.title}:
       </h1>
       <p>{@html termin.content}</p>
       {#if termin?.flyer}

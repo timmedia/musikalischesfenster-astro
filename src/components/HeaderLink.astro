@@ -15,8 +15,8 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
     className,
     "focus:",
     isActive
-      ? "text-primary-blue font-semibold md:border-b-2 md:border-primary-blue"
-      : "",
+      ? "text-primary-blue md:text-stone-500 font-semibold md:border-b-2 md:border-primary-blue"
+      : "text-stone-500",
   ]}
   {...props}
 >
