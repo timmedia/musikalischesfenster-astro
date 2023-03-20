@@ -17,7 +17,7 @@
       title: "16 Uhr, Pflegeheim Zofingen, Palliativabteilung",
       content:
         "Bach - ganz leise: Brandenburgisches Konzert Nr. 3, Beethoven: Adagio",
-      flyer: "Flyer_Zofingen.pdf",
+      flyer: "/Flyer_Zofingen.pdf",
     },
     {
       date: new Date(2019, 2, 10),
@@ -204,7 +204,7 @@
     {
       date: new Date(2023, 0, 30),
       title: "15:00 Uhr, Demenzabteilung St. Bernhard Wettingen",
-      flyerURL: "flyer_300123.pdf",
+      flyer: "/flyer_300123.pdf",
       content:
         "„Here Comes the Sun“: Werke von den Beatles und Brahms <br>Ueli Angstmann, Bassklarinette und Saxophon; Stefan Müller, Harmonium",
     },
@@ -212,6 +212,7 @@
       date: new Date(2023, 2, 5),
       title: "18:00 Uhr, Kirche Staufberg bei Lenzburg",
       content: "Konzert",
+      flyer: "/flyer_050323.jpg",
     },
     {
       date: new Date(2023, 4, 11),
@@ -263,14 +264,7 @@
       <p>{@html termin.content}</p>
       {#if termin?.flyer}
         <p>
-          <a
-            href={termin.flyer}
-            download="flyer{termin.date
-              .toLocaleDateString('uk')
-              .split('.')
-              .join('')}.pdf"
-            target="_blank"
-          >
+          <a href={termin.flyer} download={termin.flyer} target="_blank">
             Flyer
           </a>
         </p>

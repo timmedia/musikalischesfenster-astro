@@ -44,8 +44,8 @@
     <div class="flex flex-col justify-between">
       <p class="text-center text-sm">{track.name}</p>
       <audio class="w-full" controls>
-        <source src="music/{track.file}" type="audio/mp3" />
-        <p><a href="music/{track.file}">Datei Herunterladen</a></p>
+        <source src="/music/{track.file}" type="audio/mp3" />
+        <p><a href="/music/{track.file}">Datei Herunterladen</a></p>
       </audio>
     </div>
   {/each}
