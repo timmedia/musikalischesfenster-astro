@@ -13,6 +13,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
   href={href}
   class:list={[
     className,
+    "focus:",
     isActive
       ? "text-primary-blue font-semibold md:border-b-2 md:border-primary-blue"
       : "",

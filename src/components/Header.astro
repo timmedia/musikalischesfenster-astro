@@ -4,33 +4,38 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header class="shadow-lg">
-  <svg class="hidden md:block" viewBox="0 0 92 12">
-    <defs>
-      <mask id="sample" maskUnits="userSpaceOnUse">
-        <rect width="400px" height="100px" fill="white"></rect>
-        <text
-          x="46"
-          y="10"
-          font-size="8.4"
-          font-family="Times New Roman"
-          text-anchor="middle">{SITE_TITLE}</text
-        >
-      </mask>
-    </defs>
-    <rect
-      id="title-mask"
-      fill="#eee"
-      width="100%"
-      height="100%"
-      mask="url(#sample)"></rect>
-  </svg>
+  <div class="hidden md:flex w-full flex-row">
+    <div class="flex-1 bg-primary-gray"></div>
+    <svg class="min-w-[500px] w-full max-w-5xl" viewBox="0 0 92 12">
+      <defs>
+        <mask id="sample" maskUnits="userSpaceOnUse">
+          <rect width="400px" height="100px" fill="white"></rect>
+          <text
+            x="46"
+            y="10"
+            font-size="8.4"
+            font-family="Times New Roman"
+            text-anchor="middle">{SITE_TITLE}</text
+          >
+        </mask>
+      </defs>
+      <rect
+        id="title-mask"
+        fill="#eee"
+        width="100%"
+        height="100%"
+        mask="url(#sample)"></rect>
+    </svg>
+    <div class="flex-1 bg-primary-gray"></div>
+  </div>
+
   <nav class="bg-primary-gray min-h-[50px]">
     <div
-      class="container flex flex-wrap items-center justify-between md:justify-center mx-auto"
+      class="flex flex-wrap items-center justify-between md:justify-center px-5 w-full"
     >
       <h1
         style="font-family: 'Times New Roman'"
-        class="md:hidden text-3xl font-medium ml-5 text-stone-600"
+        class="md:hidden text-3xl font-medium ml-0 text-stone-600"
       >
         {SITE_TITLE}
       </h1>
