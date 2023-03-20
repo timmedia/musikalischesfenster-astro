@@ -10,7 +10,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
 <a
-  href={href}
+  href={`${href}`}
   class:list={[
     className,
     "focus:",
