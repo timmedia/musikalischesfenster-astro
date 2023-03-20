@@ -12,16 +12,20 @@
     "/images/005.jpg",
     "/images/006.jpg",
   ];
+  let currentIndex = 0;
+  let carousel;
 </script>
 
-<div class="rounded-sm overflow-hidden relative">
+<div class="rounded-sm overflow-hidden relative shadow-lg">
   <Carousel
     autoplay
     autoplayDuration={5000}
     arrows={true}
     dots={false}
+    bind:this={carousel}
     let:showPrevPage
     let:showNextPage
+    on:pageChange={(event) => (currentIndex = event.detail)}
   >
     <div
       slot="prev"
@@ -41,11 +45,25 @@
     >
       ⟩
     </div>
-
     {#each images as image}
-      <div class="w-full max-h-[650px]">
-        <img class="select-none" src={image} alt="" />
-      </div>
+      <img class="select-none w-full h-full object-cover" src={image} alt="" />
     {/each}
   </Carousel>
+</div>
+<div class="grid grid-cols-5 gap-5 mt-5">
+  {#each images as image, index}
+    <img
+      class={`select-none hover:scale-105 rounded-sm shadow-lg transition-all object-cover h-full w-full cursor-pointer ${
+        currentIndex === index ? "grayscale-0" : "grayscale"
+      }`}
+      src={image}
+      alt=""
+      on:click={() => {
+        carousel.goTo(index);
+      }}
+      on:keydown={() => {
+        carousel.goTo(index);
+      }}
+    />
+  {/each}
 </div>
