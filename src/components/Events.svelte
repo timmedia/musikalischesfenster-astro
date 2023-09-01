@@ -1,6 +1,44 @@
 <script>
+  /**
+   * Convert a date from a string to a JS date object.
+   * @param stamp {string} in format "DD.MM.YYYY"
+   */
+  function date(stamp) {
+    const [dd, mm, yyyy] = stamp.split(".").map((s) => parseInt(s));
+    return new Date(yyyy, mm - 1, dd);
+  }
   const today = Date.now();
   const termine = [
+    {
+      date: date("04.08.2023"),
+      title: "15 Uhr, Alters- und Pflegeheim Döttingen",
+      content:
+        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. \nUeli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Peter Zürn',
+    },
+    {
+      date: date("09.09.2023"),
+      title: "15 Uhr, Palliative Care Spital Zofingen",
+      content:
+        "Goldbergvariationen und Schubert. Martin Pirktl, Gitarre; Stefan Müller, Cembalo; Texte Karin Klemm",
+    },
+    {
+      date: date("21.10.2023"),
+      title: "15 Uhr, Palliative Care Spital Zofingen",
+      content:
+        '"Music for a while" - Musik von Henry Purcell. Martin Pirktl, Gitarre; Stefan Müller, Virginal',
+    },
+    {
+      date: date("18.11.2023"),
+      title: "15 Uhr, Palliative Care Spital Zofingen",
+      content:
+        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium',
+    },
+    {
+      date: date("16.12.2023"),
+      title: "15 Uhr, Palliative Care Spital Zofingen",
+      content:
+        '"Siciliano": Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
+    },
     {
       date: new Date(2018, 11, 4),
       title: "18 Uhr, Hospiz Brugg",
