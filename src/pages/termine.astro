@@ -5,5 +5,5 @@ import Layout from "../layouts/StandardPage.astro";
 
 <Layout title="Terminkalender" description="Alles rund um das Projekt.">
   <p class="mb-4">Alles rund um das Projekt.</p>
-  <Events />
+  <Events client:only="svelte" />
 </Layout>
