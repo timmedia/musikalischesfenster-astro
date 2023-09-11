@@ -23,19 +23,19 @@
     },
     {
       date: date("21.10.2023"),
-      title: "15 Uhr, Palliative Care Spital Zofingen",
+      title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Music for a while" - Musik von Henry Purcell. Martin Pirktl, Gitarre; Stefan Müller, Virginal',
     },
     {
       date: date("18.11.2023"),
-      title: "15 Uhr, Palliative Care Spital Zofingen",
+      title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Little Wing": Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium',
     },
     {
       date: date("16.12.2023"),
-      title: "15 Uhr, Palliative Care Spital Zofingen",
+      title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Siciliano": Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
     },
