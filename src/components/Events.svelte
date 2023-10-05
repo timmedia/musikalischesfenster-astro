@@ -26,18 +26,21 @@
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Music for a while" - Musik von Henry Purcell. Martin Pirktl, Gitarre; Stefan Müller, Virginal',
+      flyer: "/flyer_211023.jpg",
     },
     {
       date: date("18.11.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Little Wing": Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium',
+      flyer: "/flyer_181123.jpg",
     },
     {
       date: date("16.12.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
         '"Siciliano": Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
+      flyer: "/flyer_161223.jpg",
     },
     {
       date: new Date(2018, 11, 4),
@@ -304,14 +307,23 @@
       <p>{@html termin.content}</p>
       {#if termin?.flyer}
         <p>
-          <a href={termin.flyer} download={termin.flyer} target="_blank">
+          <a
+            href={termin.flyer}
+            download={termin.flyer}
+            target="_blank"
+            class="text-blue-400 underline font-bold"
+          >
             Flyer
           </a>
         </p>
       {/if}
       {#if termin?.flyerURL}
         <p>
-          <a href={termin.flyerURL} target="_blank">Flyer</a>
+          <a
+            href={termin.flyerURL}
+            target="_blank"
+            class="text-blue-400 underline">Flyer</a
+          >
         </p>
       {/if}
     </li>
