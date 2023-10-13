@@ -12,13 +12,13 @@
     {
       date: date("23.05.2024"),
       title: "19 Uhr, Ref. Kirche Wettingen",
-      content: "19:00 Uhr Konzert \n19:45 Uhr Generalversammlung",
+      content: "19:00 Uhr Konzert <br />19:45 Uhr Generalversammlung",
     },
     {
       date: date("04.08.2023"),
       title: "15 Uhr, Alters- und Pflegeheim Döttingen",
       content:
-        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. \nUeli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Peter Zürn',
+        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. <br />Ueli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Peter Zürn',
     },
     {
       date: date("09.09.2023"),
