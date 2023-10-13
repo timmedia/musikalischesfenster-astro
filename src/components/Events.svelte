@@ -10,6 +10,11 @@
   const today = Date.now();
   const termine = [
     {
+      date: date("23.05.2024"),
+      title: "19 Uhr, Ref. Kirche Wettingen",
+      content: "19:00 Uhr Konzert \n19:45 Uhr Generalversammlung",
+    },
+    {
       date: date("04.08.2023"),
       title: "15 Uhr, Alters- und Pflegeheim Döttingen",
       content:
