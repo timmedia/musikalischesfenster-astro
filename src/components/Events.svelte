@@ -41,6 +41,13 @@
       flyer: "/flyer_181123.jpg",
     },
     {
+      date: date("15.12.2023"),
+      title: "15 Uhr, Pflegeheim Kehl, Baden, 3. Stock",
+      content:
+        '"Siziliano": Adventliche Musik des Barocks, Barock-Oboe, Blockflöte und Cembalo; Bernhard Kühne und Stefan Müller; Texte Karin Klemm',
+      flyer: "/flyer_151223.jpg",
+    },
+    {
       date: date("16.12.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
