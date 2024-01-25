@@ -10,6 +10,20 @@
   const today = Date.now();
   const termine = [
     {
+      date: date("03.03.2024"),
+      title: "17 Uhr, Kath. Kirche Leibstadt",
+      content:
+        '"Bach ganz leise"<br />Martin Pirktl, Gitarre; Stefan Müller, Cembalo und Orgel; Texte Karin Klemm',
+      flyer: "./flyer_030324.jpg",
+    },
+    {
+      date: date("02.02.2024"),
+      title: "15 Uhr, Alters- und Pflegeheim Döttingen, 2. Stock",
+      content:
+        '"Somewhere over the rainbow" - Schubert, Wagner und Jazz <br />Susannah Haberfeld, Mezzosopran; Stefan Müller, Harmonium; Texte Peter Zürn',
+      flyer: "/flyer_020224.jpg",
+    },
+    {
       date: date("23.05.2024"),
       title: "19 Uhr, Ref. Kirche Wettingen",
       content: "19:00 Uhr Konzert <br />19:45 Uhr Generalversammlung",
