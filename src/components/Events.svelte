@@ -287,15 +287,79 @@
       content: "19:00 Uhr Konzert <br>19:45 Uhr Generalversammlung",
     },
   ].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+  const upcoming = termine
+    .filter((termin) => termin.date.valueOf() >= today)
+    .sort((a, b) => a.date.valueOf() - b.date.valueOf());
+  const past = termine
+    .filter((termin) => termin.date.valueOf() < today)
+    .sort((a, b) => b.date.valueOf() - a.date.valueOf());
 </script>
 
 <ul>
-  {#each termine as termin}
-    <li
-      class="mb-5 {termin.date.valueOf() > today
-        ? 'text-stone-800'
-        : 'text-stone-500'}"
-    >
+  {#each upcoming as termin}
+    <li class="mb-5 text-stone-800">
+      <h1
+        class="md:text-xl text-inherit {termin?.cancelled
+          ? 'line-through'
+          : ''}"
+      >
+        <strong class="font-semibold text-inherit">
+          {[
+            "Sonntag",
+            "Montag",
+            "Dienstag",
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag",
+          ][termin.date.getDay()]}
+
+          {termin.date.getDate()}. {[
+            "Januar",
+            "Februar",
+            "März",
+            "April",
+            "Mai",
+            "Juni",
+            "Juli",
+            "August",
+            "September",
+            "Oktober",
+            "November",
+            "Dezember",
+          ][termin.date.getMonth()]}
+          {termin.date.getUTCFullYear()},
+        </strong>
+        {@html termin.title}:
+      </h1>
+      <p>{@html termin.content}</p>
+      {#if termin?.flyer}
+        <p>
+          <a
+            href={termin.flyer}
+            download={termin.flyer}
+            target="_blank"
+            class="text-blue-400 underline font-bold"
+          >
+            Flyer
+          </a>
+        </p>
+      {/if}
+      {#if termin?.flyerURL}
+        <p>
+          <a
+            href={termin.flyerURL}
+            target="_blank"
+            class="text-blue-400 underline">Flyer</a
+          >
+        </p>
+      {/if}
+    </li>
+  {/each}
+  <hr class="py-3 border-stone-400" />
+  {#each past as termin}
+    <li class="mb-5 text-stone-500">
       <h1
         class="md:text-xl text-inherit {termin?.cancelled
           ? 'line-through'
