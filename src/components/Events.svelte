@@ -13,7 +13,7 @@
       date: date("03.03.2024"),
       title: "17 Uhr, Kath. Kirche Leibstadt",
       content:
-        '"Bach ganz leise"<br />Martin Pirktl, Gitarre; Stefan Müller, Cembalo und Orgel; Texte Karin Klemm',
+        'Benefizkonzert "Bach ganz leise"<br />Martin Pirktl, Gitarre; Stefan Müller, Cembalo und Orgel; Texte Karin Klemm',
       flyer: "./flyer_030324.jpg",
     },
     {
