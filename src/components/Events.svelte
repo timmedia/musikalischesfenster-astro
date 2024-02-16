@@ -1,14 +1,25 @@
-<script>
+<script lang="ts">
+  import EventListing from "./EventListing.svelte";
+  import type { ComponentProps } from "svelte";
   /**
    * Convert a date from a string to a JS date object.
    * @param stamp {string} in format "DD.MM.YYYY"
    */
-  function date(stamp) {
+  function date(stamp: string) {
     const [dd, mm, yyyy] = stamp.split(".").map((s) => parseInt(s));
     return new Date(yyyy, mm - 1, dd);
   }
   const today = Date.now();
-  const termine = [
+  interface Termin {
+    date: Date;
+    title: string;
+    content: string;
+    cancelled?: boolean;
+    flyer?: string;
+    flyerURL?: string;
+  }
+
+  const termine: ComponentProps<EventListing>["termin"][] = [
     {
       date: date("03.03.2024"),
       title: "17 Uhr, Kath. Kirche Leibstadt",
@@ -286,7 +297,7 @@
       title: "19:00 Uhr, Kath. Kirche St. Sebastian",
       content: "19:00 Uhr Konzert <br>19:45 Uhr Generalversammlung",
     },
-  ].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+  ];
 
   const upcoming = termine
     .filter((termin) => termin.date.valueOf() >= today)
@@ -298,124 +309,10 @@
 
 <ul>
   {#each upcoming as termin}
-    <li class="mb-5 text-stone-800">
-      <h1
-        class="md:text-xl text-inherit {termin?.cancelled
-          ? 'line-through'
-          : ''}"
-      >
-        <strong class="font-semibold text-inherit">
-          {[
-            "Sonntag",
-            "Montag",
-            "Dienstag",
-            "Mittwoch",
-            "Donnerstag",
-            "Freitag",
-            "Samstag",
-          ][termin.date.getDay()]}
-
-          {termin.date.getDate()}. {[
-            "Januar",
-            "Februar",
-            "März",
-            "April",
-            "Mai",
-            "Juni",
-            "Juli",
-            "August",
-            "September",
-            "Oktober",
-            "November",
-            "Dezember",
-          ][termin.date.getMonth()]}
-          {termin.date.getUTCFullYear()},
-        </strong>
-        {@html termin.title}:
-      </h1>
-      <p>{@html termin.content}</p>
-      {#if termin?.flyer}
-        <p>
-          <a
-            href={termin.flyer}
-            download={termin.flyer}
-            target="_blank"
-            class="text-blue-400 underline font-bold"
-          >
-            Flyer
-          </a>
-        </p>
-      {/if}
-      {#if termin?.flyerURL}
-        <p>
-          <a
-            href={termin.flyerURL}
-            target="_blank"
-            class="text-blue-400 underline">Flyer</a
-          >
-        </p>
-      {/if}
-    </li>
+    <EventListing {termin} past={false} />
   {/each}
   <hr class="py-3 border-stone-400" />
   {#each past as termin}
-    <li class="mb-5 text-stone-500">
-      <h1
-        class="md:text-xl text-inherit {termin?.cancelled
-          ? 'line-through'
-          : ''}"
-      >
-        <strong class="font-semibold text-inherit">
-          {[
-            "Sonntag",
-            "Montag",
-            "Dienstag",
-            "Mittwoch",
-            "Donnerstag",
-            "Freitag",
-            "Samstag",
-          ][termin.date.getDay()]}
-
-          {termin.date.getDate()}. {[
-            "Januar",
-            "Februar",
-            "März",
-            "April",
-            "Mai",
-            "Juni",
-            "Juli",
-            "August",
-            "September",
-            "Oktober",
-            "November",
-            "Dezember",
-          ][termin.date.getMonth()]}
-          {termin.date.getUTCFullYear()},
-        </strong>
-        {@html termin.title}:
-      </h1>
-      <p>{@html termin.content}</p>
-      {#if termin?.flyer}
-        <p>
-          <a
-            href={termin.flyer}
-            download={termin.flyer}
-            target="_blank"
-            class="text-blue-400 underline font-bold"
-          >
-            Flyer
-          </a>
-        </p>
-      {/if}
-      {#if termin?.flyerURL}
-        <p>
-          <a
-            href={termin.flyerURL}
-            target="_blank"
-            class="text-blue-400 underline">Flyer</a
-          >
-        </p>
-      {/if}
-    </li>
+    <EventListing {termin} past={true} />
   {/each}
 </ul>
