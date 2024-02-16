@@ -1,7 +1,7 @@
 <script>
   const images = [
-    ["/images/008.jpg", "Martin und Stefan"],
     ["/images/010.jpg", "Stefan und Martin"],
+    ["/images/008.jpg", "Martin und Stefan"],
     ["/images/009.jpg", "Martin und Stefan"],
     ["/images/011.jpg", "Stefan und Martin"],
     ["/images/001.jpg", "Stefan"],
