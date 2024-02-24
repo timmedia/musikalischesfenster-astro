@@ -21,6 +21,19 @@
 
   const termine: ComponentProps<EventListing>["termin"][] = [
     {
+      date: date("05.03.2023"),
+      title: "11 Uhr, Hospiz Zentralschweiz (Littau)",
+      content:
+        '"Bach ganz leise"<br />Martin Pirktl, Gitarre; Stefan Müller, Cembalo',
+    },
+    {
+      date: date("16.12.2023"),
+      title: "14 Uhr, Hospiz Aargau (Brugg)",
+      content:
+        '"Siciliano": Adventliche Musik<br />Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
+      flyer: "./flyer_161223.pdf",
+    },
+    {
       date: date("03.03.2024"),
       title: "17 Uhr, Kath. Kirche Leibstadt",
       content:
