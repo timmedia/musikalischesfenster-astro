@@ -21,6 +21,21 @@
 
   const termine: ComponentProps<EventListing>["termin"][] = [
     {
+      date: date("31.05.2024"),
+      title:
+        "14:30 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
+      content:
+        "„Amoroso“: Musik für Blockflöte, Oboe und Cembalo Bernhard Kühne und Stefan Müller; Texte Karin Klemm Auf dem Programm stehen früh- bis hochbarocke Werke aus Italien und Deutschland von Geminiani, Mancini, Geminiani, Händel und Telemann",
+      flyer: "./flyer_310524.jpg",
+    },
+    {
+      date: date("23.05.2024"),
+      title: "19 Uhr, ref. Kirche Wettingen",
+      flyer: "./flyer_230524.jpg",
+      content:
+        "Am 23.5. 2024 um 19.00 Uhr spielt das Duo «Bach-ganz leise» ein kleines Konzert in der ref. Kirche Wettingen, anschliessend findet die Generalversammlung des Vereines «Musikalisches Fenster» statt. Zum Konzert mit Apéro sind alle Interessierten eingeladen. Das Duo besteht aus den beiden Musikern Martin Pirktl (Gitarre) und Stefan Müller (Hammerflügel). Zu Beginn wird eine Transkription der Orgel-Triosonate e-Moll BWV 528 gespielt. Dem folgt der zweite Satz aus Mozarts letzter Sinfonie (Jupiter), das «Andante cantabile». Seelsorgerin Karin Klemm liest Texte aus der christlichen Mystik. Das «Musikalische Fenster» fördert musikalische Geschenke für Menschen in schweren Zeiten und Stunden auf der Palliativstation, in Pflegeheimen und ähnlichen Institutionen. Wir freuen uns über ihre Unterstützung. ",
+    },
+    {
       date: date("05.03.2023"),
       title: "11 Uhr, Hospiz Zentralschweiz (Littau)",
       content:
@@ -30,7 +45,7 @@
       date: date("16.12.2023"),
       title: "14 Uhr, Hospiz Aargau (Brugg)",
       content:
-        '"Siciliano": Adventliche Musik<br />Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
+        "&quot;Siciliano&quot;: Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonall",
       flyer: "./flyer_161223.pdf",
     },
     {
@@ -56,7 +71,7 @@
       date: date("04.08.2023"),
       title: "15 Uhr, Alters- und Pflegeheim Döttingen",
       content:
-        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. <br />Ueli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Peter Zürn',
+        "&quot;Little Wing&quot;: Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Peter Zürn",
     },
     {
       date: date("09.09.2023"),
@@ -68,28 +83,28 @@
       date: date("21.10.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
-        '"Music for a while" - Musik von Henry Purcell. Martin Pirktl, Gitarre; Stefan Müller, Virginal',
+        "&quot;Music for a while&quot; - Musik von Henry Purcell und Franz Schubert. Daniela Stoll, Sopran, Martin Pirktl, Gitarre, Stefan Müller, Virginal; Texte Karin Klemm",
       flyer: "/flyer_211023.jpg",
     },
     {
       date: date("18.11.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
-        '"Little Wing": Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium',
+        "&quot;Little Wing&quot;: Musik von Brahms, Hendrix und den Beatles. Ueli Angstmann, Saxophon; Stefan Müller, Harmonium; Texte Karin Klemm",
       flyer: "/flyer_181123.jpg",
     },
     {
       date: date("15.12.2023"),
       title: "15 Uhr, Pflegeheim Kehl, Baden, 3. Stock",
       content:
-        '"Siziliano": Adventliche Musik des Barocks, Barock-Oboe, Blockflöte und Cembalo; Bernhard Kühne und Stefan Müller; Texte Karin Klemm',
+        "&quot;Siciliano&quot;: Adventliche Musik des Barock. Bernhard Kühne, Barock-Oboe, Blockflöte und Stefan Müller Cembalo; Texte Karin Klemm",
       flyer: "/flyer_151223.jpg",
     },
     {
       date: date("16.12.2023"),
       title: "16 Uhr, Palliative Care Spital Zofingen",
       content:
-        '"Siciliano": Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal',
+        "&quot;Siciliano&quot;: Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonal",
       flyer: "/flyer_161223.jpg",
     },
     {
@@ -297,18 +312,20 @@
       title: "15:00 Uhr, Demenzabteilung St. Bernhard Wettingen",
       flyer: "/flyer_300123.pdf",
       content:
-        "„Here Comes the Sun“: Werke von den Beatles und Brahms <br>Ueli Angstmann, Bassklarinette und Saxophon; Stefan Müller, Harmonium",
+        "„Here Comes the Sun“: Werke von den Beatles und Brahms <br>Ueli Angstmann, Bassklarinette und Saxophon; Stefan Müller, Harmonium; Texte Karin Klemm",
     },
     {
       date: new Date(2023, 2, 5),
       title: "18:00 Uhr, Kirche Staufberg bei Lenzburg",
-      content: "Konzert",
+      content:
+        "Konzert mit Désirée Mori, Mezzosopran, Martin Pirktl, Gitarre und Stefan Müller, Cembalo und Orgel. Werke von Purcell, Bach und Krieger; Texte Karin Klemm",
       flyer: "/flyer_050323.jpg",
     },
     {
       date: new Date(2023, 4, 11),
       title: "19:00 Uhr, Kath. Kirche St. Sebastian",
-      content: "19:00 Uhr Konzert <br>19:45 Uhr Generalversammlung",
+      content:
+        "Konzert vor der Generalversammlung, «Bach-ganz leise»: Martin Pirktl und Stefan Müller, Gitarre und Hammerflügel. Werke von Bach und Schubert",
     },
   ];
 
