@@ -10,6 +10,9 @@
     ["/images/004.jpg", "Stefan"],
     ["/images/005.jpg", "Spital"],
     ["/images/006.jpg", "Musiker"],
+    ["/images/012.jpg", "Stefan"],
+    ["/images/013.jpg", "Zuhörer"],
+    ["/images/014.jpg", "Stefan"],
   ];
   let currentIndex = 0;
   const carouselTimer = setInterval(
