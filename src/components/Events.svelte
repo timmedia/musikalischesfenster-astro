@@ -21,6 +21,44 @@
 
   const termine: ComponentProps<EventListing>["termin"][] = [
     {
+      date: date("02.03.2025"),
+      title: "18:00 Uhr, Kath. Kirche Leibstadt",
+      content:
+        "Frisch revidierte Hauser-Orgel, Blockflöte und Oboe <br>Werke von Fontana, Castello, Frescobaldi, Babell <br> Bernhard Kühne (Blockflöte / Oboe); Stefan Müller (Orgel); Texte Karin Klemm <br> Kollekte für das Musikalische Fenster <br>Apéro von der Kirchenpflege offeriert",
+      flyer: "./flyer_020325.jpg",
+    },
+    {
+      date: date("05.12.2024"),
+      title:
+        "16:00 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
+      content:
+        "„In dulce Jubilo“ - adventliche Musik zum Hören und Mitsingen <br>Bernhard Kühne (Blockflöte / Barockoboe; Stefan Müller (Cembalo); Texte Karin Klemm",
+      flyer: "./flyer_051224.jpg",
+    },
+    {
+      date: date("13.09.2024"),
+      title:
+        "15:00 Uhr, Alters- und Pflegezentrum „Aareperle“ Döttingen, zweiter Stock",
+      content:
+        "„Music for a while: Purcell und Bach“: Desirée Mori und Stefan Müller (Cembalo); Texte Peter Zürn",
+      flyer: "./flyer_130924.jpg",
+    },
+    {
+      date: date("15.09.2024"),
+      title: "16:00 Uhr, Hospiz Brugg",
+      content:
+        "„Adventliche Musik für Cello und Cembalo“: Martin Birnstiel und Stefan Müller; Texte Karin Klemm",
+      flyer: "./flyer_150924.jpg",
+    },
+    {
+      date: date("11.09.2024"),
+      title:
+        "16:00 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
+      content:
+        "„Mozart: Klarinettenkonzert“: Julian Remund (Klarinette) und Stefan Müller (Cembalo); Texte Karin Klemm",
+      flyer: "./flyer_110924.pdf",
+    },
+    {
       date: date("31.05.2024"),
       title:
         "14:30 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
@@ -30,7 +68,7 @@
     },
     {
       date: date("23.05.2024"),
-      title: "19 Uhr, ref. Kirche Wettingen",
+      title: "19 Uhr, Ref. Kirche Wettingen",
       flyer: "./flyer_230524.jpg",
       content:
         "Am 23.5. 2024 um 19.00 Uhr spielt das Duo «Bach-ganz leise» ein kleines Konzert in der ref. Kirche Wettingen, anschliessend findet die Generalversammlung des Vereines «Musikalisches Fenster» statt. Zum Konzert mit Apéro sind alle Interessierten eingeladen. Das Duo besteht aus den beiden Musikern Martin Pirktl (Gitarre) und Stefan Müller (Hammerflügel). Zu Beginn wird eine Transkription der Orgel-Triosonate e-Moll BWV 528 gespielt. Dem folgt der zweite Satz aus Mozarts letzter Sinfonie (Jupiter), das «Andante cantabile». Seelsorgerin Karin Klemm liest Texte aus der christlichen Mystik. Das «Musikalische Fenster» fördert musikalische Geschenke für Menschen in schweren Zeiten und Stunden auf der Palliativstation, in Pflegeheimen und ähnlichen Institutionen. Wir freuen uns über ihre Unterstützung. ",
@@ -62,11 +100,11 @@
         '"Somewhere over the rainbow" - Schubert, Wagner und Jazz <br />Susannah Haberfeld, Mezzosopran; Stefan Müller, Harmonium; Texte Peter Zürn',
       flyer: "/flyer_020224.jpg",
     },
-    {
-      date: date("23.05.2024"),
-      title: "19 Uhr, Ref. Kirche Wettingen",
-      content: "19:00 Uhr Konzert <br />19:45 Uhr Generalversammlung",
-    },
+    // {
+    //   date: date("23.05.2024"),
+    //   title: "19 Uhr, Ref. Kirche Wettingen",
+    //   content: "19:00 Uhr Konzert <br />19:45 Uhr Generalversammlung",
+    // },
     {
       date: date("04.08.2023"),
       title: "15 Uhr, Alters- und Pflegeheim Döttingen",
