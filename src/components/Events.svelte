@@ -24,7 +24,7 @@
       date: date("02.03.2025"),
       title: "18:00 Uhr, Kath. Kirche Leibstadt",
       content:
-        "Frisch revidierte Hauser-Orgel, Blockflöte und Oboe <br>Werke von Fontana, Castello, Frescobaldi, Babell <br> Bernhard Kühne (Blockflöte / Oboe); Stefan Müller (Orgel); Texte Karin Klemm <br> Kollekte für das Musikalische Fenster <br>Apéro von der Kirchenpflege offeriert",
+        "Die herrliche Hauser-Orgel St. Fridolin Leibstadt aus dem Jahr 1989 wurde im letzten Jahr komplett revidiert und leicht erweitert. Am Sonntag, den 2. März 2025 um 18.00 Uhr erklingt sie in neuer Pracht anlässlich des „Musikalischen Fensters“ zum Krankensonntag. Es spielen Bernhard Kühne, Blockflöte und Oboe sowie Stefan Müller, Orgel. Dabei werden unkonventionelle Werke des Frühbarocks (Castello, Frescobaldi) und des empfindsamen Stils (Hertel, Babell) zu Gehör gebracht. Texte: Karin Klemm. Im Anschluss sind alle von der Kirchenpflege zu einem Apéro eingeladen. Kollekte zugunsten des Musikalischen Fensters.",
       flyer: "./flyer_020325.jpg",
     },
     {
