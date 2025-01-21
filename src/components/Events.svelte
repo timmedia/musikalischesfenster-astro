@@ -25,7 +25,7 @@
       title: "18:00 Uhr, Kath. Kirche Leibstadt",
       content:
         "Die herrliche Hauser-Orgel St. Fridolin Leibstadt aus dem Jahr 1989 wurde im letzten Jahr komplett revidiert und leicht erweitert. Am Sonntag, den 2. März 2025 um 18.00 Uhr erklingt sie in neuer Pracht anlässlich des „Musikalischen Fensters“ zum Krankensonntag. Es spielen Bernhard Kühne, Blockflöte und Oboe sowie Stefan Müller, Orgel. Dabei werden unkonventionelle Werke des Frühbarocks (Castello, Frescobaldi) und des empfindsamen Stils (Hertel, Babell) zu Gehör gebracht. Texte: Karin Klemm. Im Anschluss sind alle von der Kirchenpflege zu einem Apéro eingeladen. Kollekte zugunsten des Musikalischen Fensters.",
-      flyer: "./flyer_020325.jpg",
+      flyer: "/flyer_020325.jpg",
     },
     {
       date: date("05.12.2024"),
@@ -33,7 +33,7 @@
         "16:00 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
       content:
         "„In dulce Jubilo“ - adventliche Musik zum Hören und Mitsingen <br>Bernhard Kühne (Blockflöte / Barockoboe; Stefan Müller (Cembalo); Texte Karin Klemm",
-      flyer: "./flyer_051224.jpg",
+      flyer: "/flyer_051224.jpg",
     },
     {
       date: date("13.09.2024"),
@@ -41,14 +41,14 @@
         "15:00 Uhr, Alters- und Pflegezentrum „Aareperle“ Döttingen, zweiter Stock",
       content:
         "„Music for a while: Purcell und Bach“: Desirée Mori und Stefan Müller (Cembalo); Texte Peter Zürn",
-      flyer: "./flyer_130924.jpg",
+      flyer: "/flyer_130924.jpg",
     },
     {
       date: date("15.09.2024"),
       title: "16:00 Uhr, Hospiz Brugg",
       content:
         "„Adventliche Musik für Cello und Cembalo“: Martin Birnstiel und Stefan Müller; Texte Karin Klemm",
-      flyer: "./flyer_150924.jpg",
+      flyer: "/flyer_150924.jpg",
     },
     {
       date: date("11.09.2024"),
@@ -56,7 +56,7 @@
         "16:00 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
       content:
         "„Mozart: Klarinettenkonzert“: Julian Remund (Klarinette) und Stefan Müller (Cembalo); Texte Karin Klemm",
-      flyer: "./flyer_110924.pdf",
+      flyer: "/flyer_110924.pdf",
     },
     {
       date: date("31.05.2024"),
@@ -64,12 +64,12 @@
         "14:30 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
       content:
         "„Amoroso“: Musik für Blockflöte, Oboe und Cembalo Bernhard Kühne und Stefan Müller; Texte Karin Klemm Auf dem Programm stehen früh- bis hochbarocke Werke aus Italien und Deutschland von Geminiani, Mancini, Geminiani, Händel und Telemann",
-      flyer: "./flyer_310524.jpg",
+      flyer: "/flyer_310524.jpg",
     },
     {
       date: date("23.05.2024"),
       title: "19 Uhr, Ref. Kirche Wettingen",
-      flyer: "./flyer_230524.jpg",
+      flyer: "/flyer_230524.jpg",
       content:
         "Am 23.5. 2024 um 19.00 Uhr spielt das Duo «Bach-ganz leise» ein kleines Konzert in der ref. Kirche Wettingen, anschliessend findet die Generalversammlung des Vereines «Musikalisches Fenster» statt. Zum Konzert mit Apéro sind alle Interessierten eingeladen. Das Duo besteht aus den beiden Musikern Martin Pirktl (Gitarre) und Stefan Müller (Hammerflügel). Zu Beginn wird eine Transkription der Orgel-Triosonate e-Moll BWV 528 gespielt. Dem folgt der zweite Satz aus Mozarts letzter Sinfonie (Jupiter), das «Andante cantabile». Seelsorgerin Karin Klemm liest Texte aus der christlichen Mystik. Das «Musikalische Fenster» fördert musikalische Geschenke für Menschen in schweren Zeiten und Stunden auf der Palliativstation, in Pflegeheimen und ähnlichen Institutionen. Wir freuen uns über ihre Unterstützung. ",
     },
@@ -84,14 +84,14 @@
       title: "14 Uhr, Hospiz Aargau (Brugg)",
       content:
         "&quot;Siciliano&quot;: Adventliche Musik. Bernhard Kühne, Blockflöte und Oboe; Stefan Müller, Polygonall",
-      flyer: "./flyer_161223.pdf",
+      flyer: "/flyer_161223.pdf",
     },
     {
       date: date("03.03.2024"),
       title: "17 Uhr, Kath. Kirche Leibstadt",
       content:
         'Benefizkonzert "Bach ganz leise"<br />Martin Pirktl, Gitarre; Stefan Müller, Cembalo und Orgel; Texte Karin Klemm',
-      flyer: "./flyer_030324.jpg",
+      flyer: "/flyer_030324.jpg",
     },
     {
       date: date("02.02.2024"),
