@@ -21,11 +21,26 @@
 
   const termine: ComponentProps<EventListing>["termin"][] = [
     {
+      date: date("22.05.2025"),
+      title:
+        "Gemeindezentrum ZEKA, Hochstrasse 8, 5405 Dättwil <br>19:00 Uhr Konzert und Apéro <br>20:00 Uhr Generalversammlung",
+      content:
+        "Schubert: Impromptus und Moments Musicaux <br>Duo „Bach ganz leise“: Martin Pirktl, Gitarre; Stefan Müller, Hammerflügel; Karin Klemm: Worte aus der Mystik",
+      flyer: "/flyer_220525.jpg",
+    },
+    {
       date: date("02.03.2025"),
       title: "18:00 Uhr, Kath. Kirche Leibstadt",
       content:
         "Die herrliche Hauser-Orgel St. Fridolin Leibstadt aus dem Jahr 1989 wurde im letzten Jahr komplett revidiert und leicht erweitert. Am Sonntag, den 2. März 2025 um 18.00 Uhr erklingt sie in neuer Pracht anlässlich des „Musikalischen Fensters“ zum Krankensonntag. Es spielen Bernhard Kühne, Blockflöte und Oboe sowie Stefan Müller, Orgel. Dabei werden unkonventionelle Werke des Frühbarocks (Castello, Frescobaldi) und des empfindsamen Stils (Hertel, Babell) zu Gehör gebracht. Texte: Karin Klemm. Im Anschluss sind alle von der Kirchenpflege zu einem Apéro eingeladen. Kollekte zugunsten des Musikalischen Fensters.",
       flyer: "/flyer_020325.jpg",
+    },
+    {
+      date: date("15.12.2024"),
+      title: "16:00 Uhr, Hospiz Brugg",
+      content:
+        "„Adventliche Musik für Cello und Cembalo“: Martin Birnstiel und Stefan Müller; Texte Karin Klemm",
+      flyer: "/flyer_151224.jpg",
     },
     {
       date: date("05.12.2024"),
@@ -44,19 +59,19 @@
       flyer: "/flyer_130924.jpg",
     },
     {
-      date: date("15.09.2024"),
-      title: "16:00 Uhr, Hospiz Brugg",
-      content:
-        "„Adventliche Musik für Cello und Cembalo“: Martin Birnstiel und Stefan Müller; Texte Karin Klemm",
-      flyer: "/flyer_150924.jpg",
-    },
-    {
       date: date("11.09.2024"),
       title:
         "16:00 Uhr, Alters- und Pflegezentrum „Im Kehl“ Baden, vierter Stock",
       content:
-        "„Mozart: Klarinettenkonzert“: Julian Remund (Klarinette) und Stefan Müller (Cembalo); Texte Karin Klemm",
+        "(Wurde wegen Bauarbeiten abgesagt) „Mozart: Klarinettenkonzert“: Julian Remund (Klarinette) und Stefan Müller (Cembalo); Texte Karin Klemm",
       flyer: "/flyer_110924.pdf",
+      cancelled: true,
+    },
+    {
+      date: date("09.09.2024"),
+      title: "15:30 Uhr",
+      content:
+        "Barbara Dehm, Oboe; Karin Klemm, Texte Volksmusik aus Norwegen, Bach und Telemann",
     },
     {
       date: date("31.05.2024"),
