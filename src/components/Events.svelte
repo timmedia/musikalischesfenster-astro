@@ -26,7 +26,7 @@
         "Gemeindezentrum ZEKA, Hochstrasse 8, 5405 Dättwil <br>19:00 Uhr Konzert und Apéro <br>20:00 Uhr Generalversammlung",
       content:
         "Schubert: Impromptus und Moments Musicaux <br>Duo „Bach ganz leise“: Martin Pirktl, Gitarre; Stefan Müller, Hammerflügel; Karin Klemm: Worte aus der Mystik",
-      flyer: "/flyer_220525.jpg",
+      flyer: "/flyer_220525.pdf",
     },
     {
       date: date("02.03.2025"),
@@ -34,6 +34,13 @@
       content:
         "Die herrliche Hauser-Orgel St. Fridolin Leibstadt aus dem Jahr 1989 wurde im letzten Jahr komplett revidiert und leicht erweitert. Am Sonntag, den 2. März 2025 um 18.00 Uhr erklingt sie in neuer Pracht anlässlich des „Musikalischen Fensters“ zum Krankensonntag. Es spielen Bernhard Kühne, Blockflöte und Oboe sowie Stefan Müller, Orgel. Dabei werden unkonventionelle Werke des Frühbarocks (Castello, Frescobaldi) und des empfindsamen Stils (Hertel, Babell) zu Gehör gebracht. Texte: Karin Klemm. Im Anschluss sind alle von der Kirchenpflege zu einem Apéro eingeladen. Kollekte zugunsten des Musikalischen Fensters.",
       flyer: "/flyer_020325.jpg",
+    },
+    {
+      date: date("27.02.2025"),
+      title: "16:00 Uhr, Betreutes Wohnen „Lindhof“ Kleindöttingen",
+      content:
+        "„Bach ganz leise“: Musik von Bach und Schubert <br>Martin Pirktl, Gitarrs; Stefan Müller, Clavichord; Texte Karin Klemm",
+      flyer: "/flyer_270225.jpg",
     },
     {
       date: date("15.12.2024"),
