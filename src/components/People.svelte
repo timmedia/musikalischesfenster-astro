@@ -35,7 +35,7 @@
       phone: "079 787 44 57",
       position: "Fachfrau Betreuung",
       mail: "graf-margareta@bluewin.ch",
-      picture: "margareta.jpeg",
+      picture: "/margareta.jpeg",
     },
     {
       name: "Peter Wendel",
