@@ -21,6 +21,60 @@
 
   const termine: ComponentProps<EventListing>["termin"][] = [
     {
+      date: date("15.09.2026"),
+      title: "Aareperle",
+      content: "Stefan Müller, Peter Zürn",
+    },
+    {
+      date: date("03.07.2026"),
+      title: "Aareperle",
+      content: "Stefan Müller, Peter Zürn",
+    },
+    {
+      date: date("28.05.2026"),
+      title:
+        "Klingnau im Chor <br> 19:00 Uhr Konzert <br>19:45 Uhr Apéro <br>20:15 Uhr GV",
+      content: "Stefan Müller, Ueli Angstmann, Karin Klemm, Pink Floyd",
+      flyer: "./flyer_280526.jpg",
+    },
+    {
+      date: date("01.03.2026"),
+      title: "17:00 Uhr, Kath. Kirche Leibstadt",
+      content:
+        "Englische Musik von der Renaussance bis zum Barock <br>Werke von W. Byrd, J. Dowland, H. Purcell <br> Atsuko Murata, Gesang (Mezzosopran) <br>Stefan Müller, Cembalo und Orgel <br>Karin Klemm, Texte",
+      flyer: "/flyer_010326.pdf",
+    },
+    {
+      date: date("06.06.2025"),
+      title: "Aareperle",
+      content:
+        "Stefan Müller, Ueli Angstmann, Karin Klemm <br>Bach AIr bis Beatles, Polygonal, Saxophon",
+    },
+    {
+      date: date("02.07.2025"),
+      title: "Lindhof Kleindöttingen",
+      content:
+        "Stefan Müller, Ueli Angstmann, Karin Klemm <br>Beach Boys bis Beatles, Hohner und Celesta, Hohner und Celesta",
+    },
+    {
+      date: date("10.09.2025"),
+      title: "Kehl",
+      content:
+        "Stefan Müller, Julian Remund, Karin Klemm <br>Mozart und Bach, Polygonal, Klarinette",
+    },
+    {
+      date: date("11.09.2025"),
+      title: "Lindhof Kleindöttingen",
+      content:
+        "Stefan Müller, Ueli Angstmann, Karin Klemm <br>Doors, Polygonal und Hohner, Saxophon",
+    },
+    {
+      date: date("12.09.2025"),
+      title: "Aareperle",
+      content:
+        "Stefan Müller, Julian Remund, Peter Zürn <br>Mozart und Bach, Polygonal, Klarinette",
+    },
+    {
       date: date("22.05.2025"),
       title:
         "Gemeindezentrum ZEKA, Hochstrasse 8, 5405 Dättwil <br>19:00 Uhr Konzert und Apéro <br>20:00 Uhr Generalversammlung",
