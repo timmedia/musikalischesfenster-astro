@@ -38,11 +38,11 @@
       picture: "/margareta.jpeg",
     },
     {
-      name: "Peter Wendel",
+      name: "Karin Kalt",
       position: "Kassier",
-      phone: "079 277 29 06",
-      mail: "p.th.wendel@outlook.com",
-      picture: "/peter.jpg",
+      phone: "079 464 06 58",
+      mail: "karin.kalt@sunrise.ch",
+      picture: "/karin_kalt.jpg",
     },
   ];
 </script>
